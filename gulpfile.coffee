@@ -4,12 +4,12 @@ sass = require 'gulp-sass'
 connect = require 'gulp-connect'
 
 sources =
-	sass: 'sass/*.scss'
-	html: 'index.html'
+  sass: 'sass/*.scss'
+  html: 'index.html'
 
 destinations =
-	css: 'dist/css'
-	html: 'dist/'
+  css: 'dist/css'
+  html: 'dist/'
 
 gulp.task 'connect', connect.server(
   root: ['dist']
@@ -20,8 +20,8 @@ gulp.task 'connect', connect.server(
 )
 
 gulp.task 'html', ->
-	gulp.src(sources.html)
-	.pipe(gulp.dest(destinations.html))
+  gulp.src(sources.html)
+  .pipe(gulp.dest(destinations.html))
 
 gulp.task 'style', ->
   gulp.src(sources.sass)
@@ -31,8 +31,8 @@ gulp.task 'style', ->
 
 
 gulp.task 'watch', ->
-	gulp.watch sources.html, ['html']
-	gulp.watch sources.sass, ['style']
+  gulp.watch sources.html, ['html']
+  gulp.watch sources.sass, ['style']
 
 gulp.task 'default', [
   'style'
