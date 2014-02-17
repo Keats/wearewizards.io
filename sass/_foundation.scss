@@ -2,5 +2,20 @@
 // here as well
 @import "snowflake/foundation/settings";
 
+// In this case we do want the classes to be included
+$include-html-classes: true;
+$include-print-styles: true;
+
 @import "snowflake/foundation/components/global";
 @import "snowflake/foundation/components/type";
+
+// top bar config
+$topbar-bg-color: #1abc9c;
+$topbar-height: 100px;
+$topbar-title-font-size: rem-calc(25);
+$topbar-link-font-size: rem-calc(20);
+$topbar-link-bg-hover: #1abc9c;
+$topbar-link-color-hover: black;
+$topbar-link-color-active: black;
+
+@import "snowflake/foundation/components/top-bar";

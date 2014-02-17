@@ -6,8 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We Are Wizards</title>
     <link rel="stylesheet" href="css/app.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
   </head>
   <body>
 
+  <div class="contain-to-grid">
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">We Are Wizards</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="http://vincent.is" target="_blank">Blog</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+  <div class="about">
+    <div class="row">
+      <a name="about"></a>
+      <h2>About</h2>
+      Contracting available on Python (Django) / Javascript / Go
+    </div>
+  </div>
+
+  <div class="work">
+    <a name="work"></a>
+
+    <div class="row title">
+      <h2>Work</h2>
+    </div>
+
+    <div class="row">
+
+      <div class="small-4 columns">
+        <img src="http://placekitten.com/250/251" alt=""/>
+      </div>
+      <div class="small-4 columns">
+        <img src="http://placekitten.com/250/251" alt=""/>
+      </div>
+      <div class="small-4 columns">
+        <img src="http://placekitten.com/250/251" alt=""/>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="row">
+
+      <div class="small-4 columns">
+        <h4>Current location</h4>
+        <p>Central London</p>
+      </div>
+
+      <div class="small-4 columns">
+        <h4>Links</h4>
+        <p>
+          <a href="#">Linkedin</a>
+          <br>
+          <a href="#">Email</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/0.6.11/fastclick.min.js"></script>
+  <script src="/js/foundation.js"></script>
+  <script src="/js/foundation.topbar.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
   </body>
 </html>
